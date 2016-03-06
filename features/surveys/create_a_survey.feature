@@ -1,3 +1,4 @@
+@wip
 Feature: Create a survey
   As a user
   In order to share my questions with my friends
@@ -15,11 +16,10 @@ Feature: Create a survey
     When I click "Create"
     Then I should see "New survey" within the page title
 
-    When I fill in "Name" with "My Test Survey"
-    And I fill in "Description" with "This is a test survey that I created. It's got questions and stuff"
+    When I fill in "Question" with "Pugs or Nah?"
     And I click "Save"
     Then I should see "The survey was created successfully." within the notifications area
     And I should see the following survey table
-      | Name           |
-      | My Test Survey |
+      | Question       |
+      | Pugs or Nah?   |
 
